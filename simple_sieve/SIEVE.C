@@ -25,7 +25,7 @@
 #define DEFAULT_LIMIT   1000L
 #define DEFAULT_SECONDS 5
 #define BITSPERBYTE     8
-#define TRUE 			   1
+#define TRUE 			1
 #define FALSE           0
 
 /* Macros for bit manipulation */
@@ -85,9 +85,9 @@ char *selected_name;
 	if (!*other_ptr)
    	return FALSE;
 
-   *other_ptr = FALSE;
-   printf(msg, selected_name);
-   return TRUE;
+    *other_ptr = FALSE;
+    printf(msg, selected_name);
+    return TRUE;
 }
 
 #define ONESHOT_DRAGRACE_MSG "Warning: /1 and /d are mutually exclusive. Selecting %s mode.\n"
