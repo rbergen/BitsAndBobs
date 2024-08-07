@@ -82,8 +82,8 @@ int *other_ptr;
 char *msg;
 char *selected_name;
 {
-	if (!*other_ptr)
-   	return FALSE;
+    if (!*other_ptr)
+        return FALSE;
 
     *other_ptr = FALSE;
     printf(msg, selected_name);
@@ -150,7 +150,7 @@ int *exit_code_ptr;
     }
 
     if (warning_shown)
-    	  printf("\n");
+          printf("\n");
     return FALSE;
 }
 
